@@ -117,6 +117,18 @@ endcase
     else;
 end
 
+// MULTU and MULT
+wire [`i32] high_out;
+wire [`i32] low_out;
+
+Multifier multifier_inst(
+    .IS_UNSIGNED(1),
+    .a(alu_a),
+    .b(alu_b)
+    .high(high_out),
+    .low(low_out)
+);
+
 wire [`i32] alu_out;
 assign alu_out = IS_MUL ? mul_result[31:0] : ALU_Result[31:0];
 
