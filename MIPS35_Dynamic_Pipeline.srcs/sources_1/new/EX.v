@@ -45,7 +45,7 @@ reg [`i32] ALU_Result;
 wire signed [`i32] signed_ALU_A;
 wire signed [`i32] signed_ALU_B;
 wire [`i64] mul_result;
-wire IS_MUL = aluc[4];
+wire IS_MUL = (aluc == 5'b10000);
 assign signed_ALU_A = alu_a;
 assign signed_ALU_B = alu_b;
 assign mul_result = signed_ALU_A * signed_ALU_B;
@@ -103,6 +103,8 @@ casex (aluc)
         {CF, ALU_Result} = {1'b0, alu_b} << alu_a;
     5'b01101://SRL SRLV
         {ALU_Result, CF} = {alu_b ,1'b0} >> alu_a;
+    5'b10001://MFHI MFLO
+        ALU_Result = alu_a;
     default:
         ;
 endcase

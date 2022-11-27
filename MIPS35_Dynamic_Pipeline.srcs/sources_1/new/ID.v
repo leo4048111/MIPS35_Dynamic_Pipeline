@@ -29,14 +29,16 @@ module ID(
     input [`i32] rf_rdata1, // 从Regfile读出的rdata1
     input [`i32] rf_rdata2, // 从Regfile读出的rdata2
     // 为实现EX和MEM阶段数据前推添加的引脚
-    // 来自EX阶段的结果
+    // 来自EX阶段的定向结果
     input [`i32] ex_out_wdata,
     input ex_out_rf_wena,
     input [`i5] ex_out_waddr,
-    // 来自MEM阶段的结果
+    // 来自MEM阶段的定向结果
     input [`i32] mem_out_wdata,
     input mem_out_rf_wena,
     input [`i5] mem_out_waddr,
+    // 来自HILO寄存器的读出数据
+    input [`i32] hilo_rdata,
     // 输出引脚
     output rf_rena1, // 读使能信号1
     output rf_rena2, // 读使能信号2
@@ -54,7 +56,10 @@ module ID(
     output is_BEQ,
     output is_BNE,
     output is_Jump,
-    output reg[`i32] id_jump_addr
+    output reg[`i32] id_jump_addr,
+    output hl_rena,
+    output hl_r,
+    output [1:0] hl_w
     );
 
 wire [`i6] op, funct;
@@ -114,6 +119,10 @@ assign MFLO = (op == `R_type && funct == `MFLO);
 wire MUL;
 assign MUL = (op == `MUL_OP && funct == `MUL_FUNCT);
 
+// HILO寄存器读写控制信号
+assign hl_rena = MFLO | MFHI;
+assign hl_r = MFHI;
+
 // 寄存器堆控制信号
 assign rf_rena1 = rst ? 0 : (~(J|JAL|LUI|SLL|SRL|SRA));
 assign rf_rena2 = rst ? 0 : (~(J|JAL|LUI|ADDI|ADDIU|ANDI|ORI|XORI|LW|SLTI|SLTIU|LUI));
@@ -129,11 +138,11 @@ assign shamt = id_inst[`shamt];
 wire should_sign_ext;
 assign should_sign_ext = ADDI | ADDIU | SLTI | SLTIU;
 
-assign aluc[0] = SUBU | SUB | BEQ | BNE | OR | ORI | NOR  | SLT | SLTI | SRL | SRLV;
+assign aluc[0] = SUBU | SUB | BEQ | BNE | OR | ORI | NOR  | SLT | SLTI | SRL | SRLV | MFHI | MFLO;
 assign aluc[1] = ADD | ADDI | SUB | BEQ | BNE | XOR | XORI | NOR | SLT | SLTI | SLTU | SLTIU | SLL | SLLV;
 assign aluc[2] = AND | ANDI | OR | ORI | XOR | XORI | NOR | SRA | SRAV | SLL | SLLV | SRL | SRLV;
 assign aluc[3] = LUI | SLT | SLTI | SLTU | SLTIU | SRA | SRAV | SLL | SLLV | SRL | SRLV;
-assign aluc[4] = MUL;
+assign aluc[4] = MUL | MFHI | MFLO;
 
 reg [`i32] reg_alu_a;
 reg [`i32] reg_alu_b;
@@ -195,6 +204,8 @@ always @ (*) begin
     end
     else if(SLL|SRL|SRA) //这三条指令不读Rs
         reg_alu_a <= {23'b0, shamt};
+    else if(MFHI | MFLO)
+        reg_alu_a <= hilo_rdata;
     else if(rf_rena1) begin
         reg_alu_a <= reg_read_data1;
     end

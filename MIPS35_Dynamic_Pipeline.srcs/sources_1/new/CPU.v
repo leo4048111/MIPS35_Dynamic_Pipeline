@@ -102,8 +102,13 @@ wire is_BNE;
 wire is_Jump;
 wire [`i32] id_jump_addr;
 
+wire id_hl_rena;
+wire id_hl_r;
+
 //assign npc = pc + 4;
 assign jump_reqStall = is_Jump;
+
+wire [`i32] hl_rdata;
 
 ID id_instance(
     .rst(rst),
@@ -117,6 +122,7 @@ ID id_instance(
     .mem_out_wdata(mem_out_wdata),
     .mem_out_rf_wena(mem_out_rf_wena),
     .mem_out_waddr(mem_out_waddr),
+    .hilo_rdata(hl_rdata),
     .rf_rena1(rf_rena1),
     .rf_rena2(rf_rena2),
     .raddr1(raddr1),
@@ -133,10 +139,24 @@ ID id_instance(
     .is_BEQ(is_BEQ),
     .is_BNE(is_BNE),
     .is_Jump(is_Jump),
-    .id_jump_addr(id_jump_addr)
+    .id_jump_addr(id_jump_addr),
+    .hl_rena(id_hl_rena),
+    .hl_r(id_hl_r)
     );
 
 assign id_reqStall = is_BEQ || is_BNE;
+
+// HILO寄存器实例化
+RegHiLo reghilo_inst(
+    .clk(clk),
+    .rst(rst),
+    .Hi_in(1),
+    .Lo_in(1),
+    .HL_W(0),
+    .HL_Rena(id_hl_rena),
+    .HL_R(id_hl_r),
+    .HL_out(hl_rdata)
+    );
 
 // 寄存器堆模块实例化
 wire [`i32] wb_wdata;
