@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Nov 26 15:49:20 2022
-# Process ID: 5368
+# Start of session at: Sun Nov 27 16:47:37 2022
+# Process ID: 13268
 # Current directory: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14944 
+INFO: Helper process launched with PID 15168 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 358.816 ; gain = 151.422
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 358.785 ; gain = 151.387
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:29]
@@ -38,26 +38,27 @@ INFO: [Synth 8-256] done synthesizing module 'Regfile' (5#1) [D:/Projects/Vivado
 INFO: [Synth 8-638] synthesizing module 'ID_EX' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID_EX.v:24]
 INFO: [Synth 8-256] done synthesizing module 'ID_EX' (6#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID_EX.v:24]
 INFO: [Synth 8-638] synthesizing module 'EX' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
-INFO: [Synth 8-226] default block is never used [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:47]
-INFO: [Synth 8-256] done synthesizing module 'EX' (7#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
+INFO: [Synth 8-638] synthesizing module 'Multifier' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multifier' (7#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EX' (8#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
 INFO: [Synth 8-638] synthesizing module 'EX_MEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
-INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (8#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (9#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
 INFO: [Synth 8-638] synthesizing module 'MEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
-INFO: [Synth 8-256] done synthesizing module 'MEM' (9#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (10#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
 INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:63]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ila_0' (10#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'DMEM' (11#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (11#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'DMEM' (12#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 INFO: [Synth 8-638] synthesizing module 'MEM_WB' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
-INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (12#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
-INFO: [Synth 8-256] done synthesizing module 'CPU' (13#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (13#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (14#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
 INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (14#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'IMEM' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IMEM' (16#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
 WARNING: [Synth 8-689] width (11) of port connection 'IM_Addr' does not match port width (8) of module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:46]
-INFO: [Synth 8-256] done synthesizing module 'top' (16#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[4]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[3]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[2]
@@ -76,7 +77,7 @@ WARNING: [Synth 8-3331] design PC has unconnected port stall[2]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[1]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 395.961 ; gain = 188.566
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 402.836 ; gain = 195.438
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -86,7 +87,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 395.961 ; gain = 188.566
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 402.836 ; gain = 195.438
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'imem_instance/dmg_inst_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:32]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ila_0' instantiated as 'cpu_instance/dmem_instance/ila_inst' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:63]
@@ -95,10 +96,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-5368-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-13268-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
 Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
@@ -106,16 +107,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 699.594 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 711.328 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -123,7 +124,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for cpu_instance/dmem_instance/ila_inst. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for imem_instance/dmg_inst_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
@@ -157,6 +158,7 @@ INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:37]
 INFO: [Synth 8-5545] ROM "ZF" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[8]" won't be mapped to RAM because it is too sparse
@@ -183,15 +185,16 @@ INFO: [Synth 8-5546] ROM "memory_reg[28]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "memory_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[31]" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_a_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:185]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_b_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:197]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_read_data2_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:151]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_read_data1_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:137]
-WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:49]
-WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'SF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:80]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_a_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:194]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_b_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:206]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_read_data2_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:160]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_read_data1_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:146]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Result_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'SF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:88]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,6 +207,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	  33 Input     64 Bit       Adders := 1     
 	   2 Input     33 Bit       Adders := 2     
 	   3 Input     33 Bit       Adders := 2     
 	   3 Input     32 Bit       Adders := 2     
@@ -214,18 +218,50 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 74    
 	               11 Bit    Registers := 2     
-	                5 Bit    Registers := 3     
-	                4 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
 	                1 Bit    Registers := 10    
++---Multipliers : 
+	                32x32  Multipliers := 1     
 +---Muxes : 
-	   2 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 40    
+	   2 Input     64 Bit        Muxes := 64    
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     46 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 42    
 	   3 Input     32 Bit        Muxes := 1     
-	  14 Input     32 Bit        Muxes := 1     
+	  15 Input     32 Bit        Muxes := 1     
 	   6 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 68    
-	  14 Input      1 Bit        Muxes := 5     
+	  15 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -274,11 +310,48 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 4     
 	               11 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 2     
+Module Multifier 
+Detailed RTL Component Info : 
++---Adders : 
+	  33 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 64    
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     60 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     58 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     56 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     54 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     52 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     46 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     44 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     38 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
 Module EX 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -288,12 +361,14 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 	   2 Input      1 Bit         XORs := 3     
++---Multipliers : 
+	                32x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     33 Bit        Muxes := 1     
-	  14 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
-	  14 Input      1 Bit        Muxes := 5     
+	  15 Input      1 Bit        Muxes := 6     
 Module EX_MEM 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -345,11 +420,23 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 699.594 ; gain = 492.199
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "ZF" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP mul_result, operation Mode is: A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
 INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[8]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[9]" won't be mapped to RAM because it is too sparse
@@ -376,9 +463,9 @@ INFO: [Synth 8-5546] ROM "memory_reg[29]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "memory_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[31]" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 711.328 ; gain = 503.930
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -386,15 +473,33 @@ Report RTL Partitions:
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|EX          | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|EX          | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|EX          | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|EX          | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (CF_reg) is unused and will be removed from module EX.
 WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module EX.
 WARNING: [Synth 8-3332] Sequential element (SF_reg) is unused and will be removed from module EX.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 711.328 ; gain = 503.930
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 699.594 ; gain = 492.199
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 711.328 ; gain = 503.930
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -408,10 +513,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 713.645 ; gain = 506.250
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 751.641 ; gain = 544.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 713.656 ; gain = 506.262
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 751.641 ; gain = 544.242
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -423,16 +528,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -449,7 +554,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -462,7 +567,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -474,25 +579,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -512,56 +617,60 @@ Report Cell Usage:
 +------+---------------+------+
 |1     |dist_mem_gen_0 |     1|
 |2     |ila_0          |     1|
-|3     |BUFG           |     5|
-|4     |CARRY4         |    69|
-|5     |LUT1           |    74|
-|6     |LUT2           |   320|
-|7     |LUT3           |   333|
-|8     |LUT4           |   145|
-|9     |LUT5           |   238|
-|10    |LUT6           |  1499|
-|11    |MUXF7          |   406|
-|12    |MUXF8          |   129|
-|13    |FDRE           |  2407|
-|14    |FDSE           |    12|
-|15    |LDC            |   128|
-|16    |IBUF           |     2|
+|3     |BUFG           |     6|
+|4     |CARRY4         |    73|
+|5     |DSP48E1_1      |     3|
+|6     |LUT1           |    76|
+|7     |LUT2           |   314|
+|8     |LUT3           |   346|
+|9     |LUT4           |   139|
+|10    |LUT5           |   226|
+|11    |LUT6           |  1417|
+|12    |MUXF7          |   403|
+|13    |MUXF8          |   129|
+|14    |FDRE           |  2401|
+|15    |FDSE           |    19|
+|16    |LD             |    32|
+|17    |LDC            |   128|
+|18    |IBUF           |     2|
 +------+---------------+------+
 
 Report Instance Areas: 
 +------+--------------------+--------+------+
 |      |Instance            |Module  |Cells |
 +------+--------------------+--------+------+
-|1     |top                 |        |  5799|
-|2     |  cpu_instance      |CPU     |  5717|
+|1     |top                 |        |  5746|
+|2     |  cpu_instance      |CPU     |  5662|
 |3     |    dmem_instance   |DMEM    |  1472|
-|4     |    ex_mem_instance |EX_MEM  |   579|
-|5     |    id_ex_instance  |ID_EX   |  1015|
-|6     |    id_instance     |ID      |   172|
-|7     |    if_id_instance  |IF_ID   |   417|
-|8     |    mem_wb_instance |MEM_WB  |    69|
-|9     |    pc_instance     |PC      |    73|
-|10    |    rf_instance     |Regfile |  1920|
-|11    |  imem_instance     |IMEM    |    64|
+|4     |    ex_instance     |EX      |    93|
+|5     |    ex_mem_instance |EX_MEM  |   482|
+|6     |    id_ex_instance  |ID_EX   |   942|
+|7     |    id_instance     |ID      |   145|
+|8     |    if_id_instance  |IF_ID   |   467|
+|9     |    mem_wb_instance |MEM_WB  |    69|
+|10    |    pc_instance     |PC      |    72|
+|11    |    rf_instance     |Regfile |  1920|
+|12    |  imem_instance     |IMEM    |    64|
 +------+--------------------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 772.805 ; gain = 169.387
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 772.805 ; gain = 565.410
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 801.746 ; gain = 193.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 801.746 ; gain = 594.348
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 238 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 128 instances were transformed.
+  A total of 160 instances were transformed.
+  LD => LDCE (inverted pins: G): 32 instances
   LDC => LDCE: 128 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-132 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+134 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 772.805 ; gain = 473.020
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 772.805 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 26 15:49:47 2022...
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 801.746 ; gain = 501.898
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 801.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 27 16:48:05 2022...

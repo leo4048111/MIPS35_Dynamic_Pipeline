@@ -43,7 +43,7 @@ module ID_EX(
     // 传递到EX的信息
     output reg [`i5] ex_waddr, // 寄存器堆写地址
     output reg ex_rf_wena, // 寄存器堆写使能信号
-    output reg [`i4] ex_aluc, // alu操作码
+    output reg [`i5] ex_aluc, // alu操作码
     output reg [`i32] ex_alu_a, // alu操作数1
     output reg [`i32] ex_alu_b, // alu操作数2
     output reg ex_dm_wena,

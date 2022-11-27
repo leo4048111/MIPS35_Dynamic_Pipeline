@@ -119,7 +119,7 @@ assign rf_rena1 = rst ? 0 : (~(J|JAL|LUI|SLL|SRL|SRA));
 assign rf_rena2 = rst ? 0 : (~(J|JAL|LUI|ADDI|ADDIU|ANDI|ORI|XORI|LW|SLTI|SLTIU|LUI));
 assign raddr1 = rst ? 0 : id_inst[`rs];
 assign raddr2 = rst ? 0 : id_inst[`rt];
-assign waddr = rst ? 0 : (JAL ? 31 : (op ? id_inst[`rt] : id_inst[`rd]));
+assign waddr = rst ? 0 : (JAL ? 31 : ((op && !MUL) ? id_inst[`rt] : id_inst[`rd]));
 assign rf_wena = rst ? 0 : (~(JR|SW|BEQ|BNE|J));
 
 // ALU控制信号与运算数
@@ -205,7 +205,7 @@ always @ (*) begin
     if(rst) begin
         reg_alu_b <= 0;
     end
-    else if(op && !BEQ && !BNE) begin
+    else if(op && !MUL && !BEQ && !BNE) begin
         if(should_sign_ext) reg_alu_b <= {{16{id_inst[15]}}, id_inst[15:0]};
         else reg_alu_b <= {16'b0, id_inst[15:0]};
     end

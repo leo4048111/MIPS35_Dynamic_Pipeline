@@ -40,8 +40,8 @@ reg [`i32] registers[31:0];
 always @ (posedge clk) begin
     if(rst) begin
         registers[0] <= 32'b0;
-        registers[1] <= 32'b0;
-        registers[2] <= 32'b0;
+        registers[1] <= 32'd99;
+        registers[2] <= 32'd578;
         registers[3] <= 32'b0;
         registers[4] <= 32'b0;
         registers[5] <= 32'b0;

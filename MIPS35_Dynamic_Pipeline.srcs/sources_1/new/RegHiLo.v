@@ -26,6 +26,7 @@ module RegHiLo(
     input [`i32] Hi_in,
     input [`i32] Lo_in,
     input [1:0] HL_W,
+    input HL_Rena,
     input HL_R,
     output [`i32] HL_out
     );
@@ -44,6 +45,6 @@ always @ (posedge clk) begin
     end
 end
 
-assign HL_out = (HL_R) ? reg_hi : reg_lo;
+assign HL_out = HL_Rena ? ((HL_R) ? reg_hi : reg_lo) : 32'b0;
 
 endmodule
