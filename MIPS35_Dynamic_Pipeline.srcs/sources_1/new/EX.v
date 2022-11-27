@@ -124,7 +124,7 @@ wire [`i32] low_out;
 Multifier multifier_inst(
     .IS_UNSIGNED(1),
     .a(alu_a),
-    .b(alu_b)
+    .b(alu_b),
     .high(high_out),
     .low(low_out)
 );
