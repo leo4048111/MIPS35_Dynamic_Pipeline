@@ -6,6 +6,7 @@
 `define rd 15:11
 `define shamt 10:6
 
+`define i64 63:0
 `define i32 31:0
 `define i26 25:0
 `define i16 15:0

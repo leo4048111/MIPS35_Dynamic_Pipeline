@@ -80,7 +80,7 @@ wire [`i5] raddr1;
 wire [`i5] raddr2;
 wire [`i5] id_waddr;
 wire id_rf_wena;
-wire [`i4] id_aluc;
+wire [`i5] id_aluc;
 wire [`i32] id_alu_a;
 wire [`i32] id_alu_b;
 
@@ -159,7 +159,7 @@ Regfile rf_instance(
 // ID_EX模块实例化
 wire [`i5] ex_waddr;
 wire ex_rf_wena;
-wire [`i4] ex_aluc;
+wire [`i5] ex_aluc;
 wire [`i32] ex_alu_a;
 wire [`i32] ex_alu_b;
 wire ex_dm_wena;

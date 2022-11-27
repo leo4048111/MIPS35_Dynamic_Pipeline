@@ -29,7 +29,7 @@ module ID_EX(
     // 来自ID的信息
     input [`i5] id_waddr, // 寄存器堆写地址
     input id_rf_wena, // 寄存器堆写使能信号
-    input [`i4] id_aluc, // alu操作码
+    input [`i5] id_aluc, // alu操作码
     input [`i32] id_alu_a, // alu操作数1
     input [`i32] id_alu_b, // alu操作数2
     input id_dm_wena,

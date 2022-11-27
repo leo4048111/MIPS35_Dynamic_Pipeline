@@ -72,3 +72,7 @@
 //NPCOp
 `define NPCOPB 0
 `define NPCOPJ 1
+
+//mul
+`define MUL_OP 6'b011_100
+`define MUL_FUNCT 6'b000_010

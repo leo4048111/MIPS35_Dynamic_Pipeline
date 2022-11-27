@@ -44,7 +44,7 @@ module ID(
     output [`i5] raddr2, // 寄存器堆读地址2
     output [`i5] waddr, // 寄存器堆写地址
     output rf_wena, // 寄存器堆写使能信号
-    output [`i4] aluc, // alu操作码
+    output [`i5] aluc, // alu操作码
     output [`i32] alu_a, // alu操作数1
     output [`i32] alu_b, // alu操作数2
     output dm_wena,
@@ -106,6 +106,14 @@ assign is_BNE = rst ? 0 : BNE;
 assign is_BEQ = rst ? 0 : BEQ;
 assign is_Jump = rst ? 0 : (J | JAL | JR);
 
+// 新增的乘法指令和装载HILO寄存器指令
+wire MFHI, MFLO;
+assign MFHI = (op == `R_type && funct == `MFHI);
+assign MFLO = (op == `R_type && funct == `MFLO);
+
+wire MUL;
+assign MUL = (op == `MUL_OP && funct == `MUL_FUNCT);
+
 // 寄存器堆控制信号
 assign rf_rena1 = rst ? 0 : (~(J|JAL|LUI|SLL|SRL|SRA));
 assign rf_rena2 = rst ? 0 : (~(J|JAL|LUI|ADDI|ADDIU|ANDI|ORI|XORI|LW|SLTI|SLTIU|LUI));
@@ -125,6 +133,7 @@ assign aluc[0] = SUBU | SUB | BEQ | BNE | OR | ORI | NOR  | SLT | SLTI | SRL | S
 assign aluc[1] = ADD | ADDI | SUB | BEQ | BNE | XOR | XORI | NOR | SLT | SLTI | SLTU | SLTIU | SLL | SLLV;
 assign aluc[2] = AND | ANDI | OR | ORI | XOR | XORI | NOR | SRA | SRAV | SLL | SLLV | SRL | SRLV;
 assign aluc[3] = LUI | SLT | SLTI | SLTU | SLTIU | SRA | SRAV | SLL | SLLV | SRL | SRLV;
+assign aluc[4] = MUL;
 
 reg [`i32] reg_alu_a;
 reg [`i32] reg_alu_b;
