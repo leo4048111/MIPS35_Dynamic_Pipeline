@@ -30,8 +30,8 @@ reg [31:0] rf_rdata2;
 initial begin
     #1 rst = 1;   //重置控制器
     #1 rst = 0;
-    rf_rdata1 = 01234;
-    rf_rdata2 = 56789;
+    rf_rdata1 = 56789;
+    rf_rdata2 = 56788;
     //-------------------------R型指令-------------------------------
     #10 id_inst = 32'b000000_00000_00001_00010_00000_100000;          //测试add指令
 
@@ -97,14 +97,28 @@ initial begin
     #10 id_inst = 32'b100011_00000_00001_0000000000000000;          //测试LW指令
 
     #10 id_inst = 32'b101011_00000_00001_0000000000000000;          //测试SW指令
+
+    //-------------------------BREAK SYSCALL TEQ--------------------
+    #10 id_inst = 32'b000000_00000_00000_00000_00000_001101;          //测试BREAK指令
+
+    #10 id_inst = 32'b000000_00000_00000_00000_00000_001100;          //测试SYSCALL指令
+
+    #10 id_inst = 32'b000000_00000_00000_00000_00000_110100;          //测试TEQ指令
 end
+
+wire is_exp;
+wire [4:0] cause_out;
+wire is_eret;
 
 ID uut(
     .rst(rst),
     .id_pc(0),
     .id_inst(id_inst),
     .rf_rdata1(rf_rdata1),
-    .rf_rdata2(rf_rdata2));
-
-
+    .rf_rdata2(rf_rdata2),
+    .is_exception(is_exp),
+    .cause_out(cause_out),
+    .is_eret(is_eret)
+    );
+    
 endmodule

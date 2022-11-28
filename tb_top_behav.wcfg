@@ -3,29 +3,33 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_top_behav.wdb" id="1">
+      <db_ref path="tb_ID_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="tb_top" />
+            <top_module name="tb_ID" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="19254fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="19255fs"></ZoomEndTime>
+      <Cursor1Time time="1000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="3" />
-   <wvobject fp_name="/tb_top/uut/cpu_instance/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/tb_ID/id_inst" type="array">
+      <obj_property name="ElementShortName">id_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id_inst[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/cpu_instance/IM_Inst" type="array">
-      <obj_property name="ElementShortName">IM_Inst[31:0]</obj_property>
-      <obj_property name="ObjectShortName">IM_Inst[31:0]</obj_property>
+   <wvobject fp_name="/tb_ID/is_exp" type="logic">
+      <obj_property name="ElementShortName">is_exp</obj_property>
+      <obj_property name="ObjectShortName">is_exp</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/cpu_instance/dmem_instance/memory" type="array">
-      <obj_property name="ElementShortName">memory[0:31][31:0]</obj_property>
-      <obj_property name="ObjectShortName">memory[0:31][31:0]</obj_property>
+   <wvobject fp_name="/tb_ID/cause_out" type="array">
+      <obj_property name="ElementShortName">cause_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cause_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ID/is_eret" type="logic">
+      <obj_property name="ElementShortName">is_eret</obj_property>
+      <obj_property name="ObjectShortName">is_eret</obj_property>
    </wvobject>
 </wave_config>
