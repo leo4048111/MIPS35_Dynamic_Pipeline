@@ -33,9 +33,10 @@ read_verilog -library xil_defaultlib {
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/defines.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CauseGenerator.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v
+  D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CP0.v
+  D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/RegHiLo.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v
-  D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/RegHiLo.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IF_ID.v
   D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/StallCtrl.v

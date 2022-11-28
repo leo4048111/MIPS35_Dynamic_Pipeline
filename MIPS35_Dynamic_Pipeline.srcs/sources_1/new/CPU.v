@@ -104,6 +104,11 @@ wire [`i32] id_jump_addr;
 
 wire id_hl_rena;
 wire id_hl_r;
+wire [1:0] id_hl_w;
+
+wire id_is_exception;
+wire [`i5] id_cause_out;
+wire id_is_eret;
 
 //assign npc = pc + 4;
 assign jump_reqStall = is_Jump;
@@ -141,10 +146,34 @@ ID id_instance(
     .is_Jump(is_Jump),
     .id_jump_addr(id_jump_addr),
     .hl_rena(id_hl_rena),
-    .hl_r(id_hl_r)
+    .hl_r(id_hl_r),
+    .hl_w(id_hl_w),
+    .is_exception(id_is_exception),
+    .cause_out(id_cause_out),
+    .is_eret(id_is_eret)
     );
 
 assign id_reqStall = is_BEQ || is_BNE;
+
+// CP0模块实例化
+wire [`i32] cp0_rdata;
+wire [`i32] cp0_status;
+wire [`i32] cp0_exc_addr;
+CP0 cp0_inst(
+    .clk(clk),
+    .rst(rst),
+    .mfc0(0),
+    .mtc0(0),
+    .pc(id_pc),
+    .Rd(5'b0),
+    .wdata(32'b0),
+    .exception(id_is_exception),
+    .eret(id_is_eret),
+    .cause(id_cause_out),
+    .rdata(cp0_rdata),
+    .status(cp0_status),
+    .exc_addr(cp0_exc_addr)
+    );
 
 // HILO寄存器实例化
 RegHiLo reghilo_inst(
@@ -242,11 +271,18 @@ EX ex_instance(
     .ZF(ZF)
     );
 
+// 设置NPC逻辑，考虑分支跳转和中断转移
 always @ (*) begin
     if(is_Jump) npc <= id_jump_addr;
     else if(ex_is_BEQ || ex_is_BNE) begin
         if((ex_is_BEQ && ZF) || (ex_is_BNE && !ZF)) npc <= ex_jump_addr;
         else npc <= pc;
+    end
+    else if(id_is_exception) begin
+        npc <= cp0_exc_addr;
+    end
+    else if(id_is_eret) begin
+        npc <= cp0_exc_addr + 4;
     end
     else npc <= pc + 4;
 end

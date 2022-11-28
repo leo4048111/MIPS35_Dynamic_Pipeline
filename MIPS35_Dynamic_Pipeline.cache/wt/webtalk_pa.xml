@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Nov 28 11:07:15 2022">
+<application name="pa" timeStamp="Mon Nov 28 12:26:59 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="10980646b70043cb982942576eaac9c1" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -21,31 +21,37 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="RunImplementation" value="1" type="JavaHandler"/>
-<property name="RunSynthesis" value="6" type="JavaHandler"/>
-<property name="SetTopNode" value="4" type="JavaHandler"/>
-<property name="SimulationClose" value="8" type="JavaHandler"/>
+<property name="RunSynthesis" value="7" type="JavaHandler"/>
+<property name="SetTopNode" value="5" type="JavaHandler"/>
+<property name="SimulationClose" value="10" type="JavaHandler"/>
 <property name="SimulationRestart" value="1" type="JavaHandler"/>
-<property name="SimulationRun" value="15" type="JavaHandler"/>
-<property name="SimulationRunAll" value="9" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="3" type="JavaHandler"/>
+<property name="SimulationRun" value="18" type="JavaHandler"/>
+<property name="SimulationRunAll" value="12" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
-<property name="NEXT, Next " value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, CP0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, CauseGenerator" value="1" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, tb_ID (tb_ID.v" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 7" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 6" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all" value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, tb_CPU (tb_CPU.v" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, tb_top (tb_top.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="4" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 17, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.xpr, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, cause_out[4:0] ; 0d ; Array, 5, cause_out[4:0], 0, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, id_inst[31:0] ; 00000034 ; Array, 1, id_inst[31:0], 0, true" value="3" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, is_eret ; 0 ; Logic, 6, is_eret, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, is_exp ; 1 ; Logic, 4, is_exp, 0, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, rf_rdata1[31:0] ; 0000ddd5 ; Array, 2, rf_rdata1[31:0], 0, true" value="1" type="GuiResourceData"/>
 <property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 113, 66, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 147, 179, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 16, 282" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 166, 191" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 242, 25" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 94, 119, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, id_inst[31:0]], 0, true" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
 <property name="GuiMode" value="67" type="GuiMode"/>

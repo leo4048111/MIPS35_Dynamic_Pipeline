@@ -60,7 +60,7 @@ module ID(
     output hl_rena,
     output hl_r,
     output [1:0] hl_w,
-    //中断控制输出
+    // 中断控制输出
     output is_exception,
     output [`i5] cause_out,
     output is_eret
