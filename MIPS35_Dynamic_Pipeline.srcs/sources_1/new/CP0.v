@@ -42,10 +42,6 @@ wire [`i32] status_in, cause_in, epc_in;
 wire [`i32] status_out, cause_out, epc_out; 
 reg [`i32] reg_status, reg_cause, reg_epc;
 
-Register Reg_status(clk, rst, status_ena, status_in, status_out);  
-Register Reg_cause(clk, rst, cause_ena, cause_in, cause_out); 
-Register Reg_epc(clk, rst, epc_ena, epc_in, epc_out);  
-
 always @ (posedge clk) begin
     if(rst) begin
         reg_status <= 32'hFFFF_FFFF;  //允许所有中断

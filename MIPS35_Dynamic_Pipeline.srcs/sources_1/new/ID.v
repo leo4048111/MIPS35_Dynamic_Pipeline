@@ -59,7 +59,11 @@ module ID(
     output reg[`i32] id_jump_addr,
     output hl_rena,
     output hl_r,
-    output [1:0] hl_w
+    output [1:0] hl_w,
+    //中断控制输出
+    output is_exception,
+    output [`i5] cause_out,
+    output is_eret
     );
 
 wire [`i6] op, funct;
@@ -119,6 +123,31 @@ assign MFLO = (op == `R_type && funct == `MFLO);
 wire MUL;
 assign MUL = (op == `MUL_OP && funct == `MUL_FUNCT);
 
+// 中断指令
+wire BREAK, SYSCALL, TEQ;
+assign BREAK = (op == `Intr_type && funct == `BREAK);
+assign SYSCALL = (op == `Intr_type && funct == `SYSCALL);
+assign TEQ = (op == `Intr_type && funct == `TEQ);
+
+wire ERET;
+assign ERET = (op == `ERET_OP && funct == `ERET_FUNCT);
+
+// 中断控制信号
+wire cin1, cin2;
+assign cin1 = ~(SYSCALL | BREAK);//cin1=~(syscall+break)
+assign cin2 = ~(SYSCALL | TEQ);//cin2=~(syscall+teq)
+wire [`i5] intr_cause;
+CauseGenerator causegen_inst(
+    .cin1(cin1),
+    .cin2(cin2),
+    .cause(intr_cause)
+    );
+assign cause_out = intr_cause;
+wire teq_true;
+assign teq_true = (alu_a == alu_b); //这里使用动态流水线技术，把EX段直接提前到ID，目的是为了提高流水效率
+assign is_exception = BREAK | SYSCALL | (TEQ && teq_true);
+assign is_eret = ERET;
+
 // HILO寄存器读写控制信号
 assign hl_rena = MFLO | MFHI;
 assign hl_r = MFHI;
@@ -129,7 +158,7 @@ assign rf_rena2 = rst ? 0 : (~(J|JAL|LUI|ADDI|ADDIU|ANDI|ORI|XORI|LW|SLTI|SLTIU|
 assign raddr1 = rst ? 0 : id_inst[`rs];
 assign raddr2 = rst ? 0 : id_inst[`rt];
 assign waddr = rst ? 0 : (JAL ? 31 : ((op && !MUL) ? id_inst[`rt] : id_inst[`rd]));
-assign rf_wena = rst ? 0 : (~(JR|SW|BEQ|BNE|J));
+assign rf_wena = rst ? 0 : (~(JR|SW|BEQ|BNE|J|BREAK|SYSCALL|TEQ|ERET));
 
 // ALU控制信号与运算数
 wire [`i5] shamt;

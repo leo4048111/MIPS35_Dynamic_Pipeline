@@ -76,3 +76,11 @@
 //mul
 `define MUL_OP 6'b011_100
 `define MUL_FUNCT 6'b000_010
+
+//intrs
+`define Intr_type 6'b000000 // opcode
+`define BREAK 6'b001_101 // Intr_type funct
+`define SYSCALL 6'b001_100 // Intr_type funct
+`define TEQ 6'b110_100 // Intr_type funct
+`define ERET_OP 6'b010_000
+`define ERET_FUNCT 6'b011_000
