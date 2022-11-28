@@ -58,6 +58,10 @@ always @ (posedge clk) begin
     end
 end
 
+assign status_out = reg_status;
+assign cause_out = reg_cause;
+assign epc_out = reg_epc;
+
 wire IE, IM_SYSCALL, IM_BREAK, IM_TEQ;   
 assign IE = status[0];
 assign IM_SYSCALL = IE & status[8];

@@ -31,7 +31,7 @@ module StallCtrl(
 
 always @ (*) begin
     if(rst) stall <= 5'b0;
-    else if(jump_reqStall) stall <= 5'b01000;
+    else if(jump_reqStall) stall <= 5'b01000; // 停住IF-ID防止读出错误指令
     else if(id_reqStall) stall <= 5'b11000;
     else if(ex_reqStall) stall <= 5'b11100;
     else if(mem_reqStall) stall <= 5'b11110;

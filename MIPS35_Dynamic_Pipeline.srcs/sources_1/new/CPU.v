@@ -111,7 +111,7 @@ wire [`i5] id_cause_out;
 wire id_is_eret;
 
 //assign npc = pc + 4;
-assign jump_reqStall = is_Jump;
+assign jump_reqStall = is_Jump | id_is_exception | id_is_eret;
 
 wire [`i32] hl_rdata;
 
@@ -164,7 +164,7 @@ CP0 cp0_inst(
     .rst(rst),
     .mfc0(0),
     .mtc0(0),
-    .pc(id_pc),
+    .pc(pc),
     .Rd(5'b0),
     .wdata(32'b0),
     .exception(id_is_exception),
@@ -282,7 +282,7 @@ always @ (*) begin
         npc <= cp0_exc_addr;
     end
     else if(id_is_eret) begin
-        npc <= cp0_exc_addr + 4;
+        npc <= cp0_exc_addr;
     end
     else npc <= pc + 4;
 end
