@@ -3,6 +3,3 @@
 
 # IP: ip/ila_0/ila_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0}]
-
-# IP: ip/dist_mem_gen_0/dist_mem_gen_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dist_mem_gen_0 || ORIG_REF_NAME==dist_mem_gen_0}]

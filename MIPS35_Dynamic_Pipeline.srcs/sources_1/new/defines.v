@@ -10,6 +10,7 @@
 `define i32 31:0
 `define i26 25:0
 `define i16 15:0
+`define i10 9:0
 `define i6 5:0
 `define i5 4:0
 `define i4 3:0

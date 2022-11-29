@@ -30,12 +30,12 @@ module DMEM(
     output [31:0] DM_RData
     );
 
-reg [31:0] memory [0:31];
+reg [31:0] memory [0:1023];
 
 initial
 begin
-    memory[0] = 32'd999;
-    memory[1] = 32'd20;
+    memory[0] = 32'd0;
+    memory[1] = 32'd0;
     memory[2] = 32'b0;
     memory[3] = 32'b0;
     memory[4] = 32'd0;
@@ -45,8 +45,8 @@ end
 
 always @(posedge clk) begin
     if(rst) begin
-        memory[0] <= 32'd999;
-        memory[1] <= 32'd20;
+        memory[0] <= 32'd0;
+        memory[1] <= 32'd0;
         memory[2] <= 32'b0;
         memory[3] <= 32'b0;
         memory[4] <= 32'd0;

@@ -11,21 +11,33 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="839166665fs"></ZoomStartTime>
-      <ZoomEndTime time="1032166668fs"></ZoomEndTime>
+      <ZoomStartTime time="888749999fs"></ZoomStartTime>
+      <ZoomEndTime time="1022250001fs"></ZoomEndTime>
       <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="3" />
+   <WVObjectSize size="6" />
    <wvobject fp_name="/tb_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/IM_Inst" type="array">
       <obj_property name="ElementShortName">IM_Inst[31:0]</obj_property>
       <obj_property name="ObjectShortName">IM_Inst[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/uut/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/uut/cpu_instance/dmem_instance/memory" type="array">
       <obj_property name="ElementShortName">memory[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">memory[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/rf_instance/registers" type="array">
+      <obj_property name="ElementShortName">registers[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[31:0][31:0]</obj_property>
    </wvobject>
 </wave_config>

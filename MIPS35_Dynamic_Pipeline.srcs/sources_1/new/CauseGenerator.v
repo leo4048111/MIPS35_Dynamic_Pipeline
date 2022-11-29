@@ -30,10 +30,10 @@ reg [`i5] reg_cause;
 always @ *
 begin
   case({cin1,cin2})
-    2'b00: reg_cause <= 32'b01000;
-    2'b01: reg_cause <= 32'b01001;
-    2'b10: reg_cause <= 32'b01101;
-    2'b11: reg_cause <= 32'b00000;
+    2'b00: reg_cause <= 5'b01000;
+    2'b01: reg_cause <= 5'b01001;
+    2'b10: reg_cause <= 5'b01101;
+    2'b11: reg_cause <= 5'b00000;
     default:;
   endcase
 end
