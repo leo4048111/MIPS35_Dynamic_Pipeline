@@ -25,6 +25,7 @@ module EX_MEM(
     input clk,
     input rst,
     input [`i5] stall,
+    input [`i4] flush,
     input [`i32] ex_wdata, // 来自EX的运算结果
     input ex_rf_wena, // 来自EX的写入使能信号输出
     input [`i5] ex_waddr, // 来自EX的写入地址输出
@@ -42,7 +43,7 @@ module EX_MEM(
     );
 
 always @ (posedge clk) begin
-    if(rst) begin
+    if(rst | flush[1]) begin
         mem_wdata <= 0;
         mem_rf_wena <= 0;
         mem_waddr <= 0;

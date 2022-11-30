@@ -25,6 +25,7 @@ module ID_EX(
     input clk,
     input rst,
     input [`i5] stall,
+    input [`i4] flush,
 
     // 来自ID的信息
     input [`i5] id_waddr, // 寄存器堆写地址
@@ -56,7 +57,7 @@ module ID_EX(
     );
 
 always @ (posedge clk) begin
-    if(rst) begin
+    if(rst | flush[2]) begin
         ex_waddr <= 0;
         ex_rf_wena <= 0;
         ex_aluc <= 0;

@@ -137,7 +137,7 @@ wire cin1, cin2;
 assign cin1 = ~(SYSCALL | BREAK);//cin1=~(syscall+break)
 assign cin2 = ~(SYSCALL | TEQ);//cin2=~(syscall+teq)
 wire [`i5] intr_cause;
-CauseGenerator causegen_inst(
+CauseGenerator causegen_instance(
     .cin1(cin1),
     .cin2(cin2),
     .cause(intr_cause)

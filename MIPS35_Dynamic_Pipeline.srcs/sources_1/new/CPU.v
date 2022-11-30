@@ -29,6 +29,17 @@ module CPU(
     output IM_rena
     );
 
+wire [`i4] flush; // 全局冲刷信号，该信号[3]~[0]位分别对应冲刷if_id,id_ex,ex_mem和mem_wb中流水寄存器的锁存数据
+wire flush_all;
+wire flush_when_branch_prediction_fails; // 当分支预测失败，需要冲刷if_id和id_ex段流水寄存器的锁存内容，即读出的错误指令的运行中间数据
+assign flush_all = 0;
+FlushCtrl flushCtrl_instance(
+    .rst(rst),
+    .flush_all(flush_all),
+    .flush_when_branch_prediction_fails(flush_when_branch_prediction_fails),
+    .flush(flush)
+    );
+
 // 流水线暂停控制器实例化
 wire id_reqStall;
 wire ex_reqStall;
@@ -65,6 +76,7 @@ IF_ID if_id_instance(
     .clk(clk),
     .rst(rst),
     .stall(stall),
+    .flush(flush),
     .if_pc(pc),
     .if_inst(IM_Inst),
     .id_pc(id_pc),
@@ -153,14 +165,16 @@ ID id_instance(
     .is_eret(id_is_eret)
     );
 
-assign id_reqStall = is_BEQ || is_BNE;
+assign id_reqStall = 0;
 
 // CP0模块实例化
 wire [`i32] cp0_rdata;
 wire [`i32] cp0_status;
 wire [`i32] cp0_exc_addr;
+wire cp0_wena;
 CP0 cp0_inst(
     .clk(clk),
+    .wena(cp0_wena),
     .rst(rst),
     .mfc0(0),
     .mtc0(0),
@@ -224,6 +238,7 @@ ID_EX id_ex_instance(
     .clk(clk),
     .rst(rst),
     .stall(stall),
+    .flush(flush),
     .id_waddr(id_waddr),
     .id_rf_wena(id_rf_wena),
     .id_aluc(id_aluc),
@@ -271,13 +286,14 @@ EX ex_instance(
     .ZF(ZF)
     );
 
-// 设置NPC逻辑，考虑分支跳转和中断转移
+assign flush_when_branch_prediction_fails = (ex_is_BEQ && ZF) || (ex_is_BNE && !ZF); // 此处使用分支失败预测，
+                                                                                     // 因此如果分支成立需要将流水线EX_MEM段之前的错误分支数据全部冲刷掉
+assign cp0_wena = !flush_when_branch_prediction_fails;
+
+// 设置NPC逻辑，考虑分支跳转和中断转移                                                  
 always @ (*) begin
-    if(is_Jump) npc <= id_jump_addr;
-    else if(ex_is_BEQ || ex_is_BNE) begin
-        if((ex_is_BEQ && ZF) || (ex_is_BNE && !ZF)) npc <= ex_jump_addr;
-        else npc <= pc;
-    end
+    if((ex_is_BEQ && ZF) || (ex_is_BNE && !ZF)) npc <= ex_jump_addr;
+    else if(is_Jump) npc <= id_jump_addr;
     else if(id_is_exception) begin
         npc <= cp0_exc_addr;
     end
@@ -300,6 +316,7 @@ EX_MEM ex_mem_instance(
     .clk(clk),
     .rst(rst),
     .stall(stall),
+    .flush(flush),
     .ex_wdata(ex_out_wdata),
     .ex_rf_wena(ex_out_rf_wena),
     .ex_waddr(ex_out_waddr),
@@ -346,6 +363,7 @@ MEM_WB mem_wb_instance(
     .clk(clk),
     .rst(rst),
     .stall(stall),
+    .flush(flush),
     .mem_wdata(mem_out_wdata),
     .mem_rf_wena(mem_out_rf_wena),
     .mem_waddr(mem_out_waddr),

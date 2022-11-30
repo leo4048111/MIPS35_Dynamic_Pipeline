@@ -22,6 +22,7 @@
 
 module CP0(
     input clk,
+    input wena, //只有写使能有效的时候才能写入
     input rst,
     input mfc0,             //输入指令为mfc0
     input mtc0,             //输入指令为mtc0
@@ -48,7 +49,7 @@ always @ (posedge clk) begin
         reg_cause <= 0;
         reg_epc <= 0;
     end
-    else begin
+    else if(wena) begin
         if(status_ena)
             reg_status <= status_in;
         if(cause_ena)

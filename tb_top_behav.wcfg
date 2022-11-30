@@ -11,11 +11,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4953916325183fs"></ZoomStartTime>
-      <ZoomEndTime time="4954050327065fs"></ZoomEndTime>
-      <Cursor1Time time="4954110000000fs"></Cursor1Time>
+      <ZoomStartTime time="40926076907fs"></ZoomStartTime>
+      <ZoomEndTime time="41062616635fs"></ZoomEndTime>
+      <Cursor1Time time="40997159000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="/tb_top/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -31,6 +31,38 @@
    <wvobject fp_name="/tb_top/uut/IM_Inst" type="array">
       <obj_property name="ElementShortName">IM_Inst[31:0]</obj_property>
       <obj_property name="ObjectShortName">IM_Inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/stall" type="array">
+      <obj_property name="ElementShortName">stall[4:0]</obj_property>
+      <obj_property name="ObjectShortName">stall[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/npc" type="array">
+      <obj_property name="ElementShortName">npc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">npc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/jump_reqStall" type="logic">
+      <obj_property name="ElementShortName">jump_reqStall</obj_property>
+      <obj_property name="ObjectShortName">jump_reqStall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/ex_is_BNE" type="logic">
+      <obj_property name="ElementShortName">ex_is_BNE</obj_property>
+      <obj_property name="ObjectShortName">ex_is_BNE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/flush_when_branch_prediction_fails" type="logic">
+      <obj_property name="ElementShortName">flush_when_branch_prediction_fails</obj_property>
+      <obj_property name="ObjectShortName">flush_when_branch_prediction_fails</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/id_is_exception" type="logic">
+      <obj_property name="ElementShortName">id_is_exception</obj_property>
+      <obj_property name="ObjectShortName">id_is_exception</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/cp0_inst/status" type="array">
+      <obj_property name="ElementShortName">status[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cpu_instance/cp0_exc_addr" type="array">
+      <obj_property name="ElementShortName">cp0_exc_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cp0_exc_addr[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/pc" type="array">
       <obj_property name="ElementShortName">pc[31:0]</obj_property>
