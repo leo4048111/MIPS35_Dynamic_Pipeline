@@ -62,14 +62,11 @@ assign DM_RData = (DM_R) ? memory[DM_Addr] : 32'bz;
 
 ila_0 ila_inst(
     .clk(clk),
-    .probe0(memory[0]),
-    .probe1(memory[1]),
-    .probe2(memory[2]),
-    .probe3(memory[3]),
-    .probe4(memory[4]),
-    .probe5(memory[5]),
-    .probe6(memory[6])
+    .probe0(memory[59]),   // a[59]
+    .probe1(memory[119]),  // b[59]
+    .probe2(memory[179]),  // c[59]
+    .probe3(memory[239]),  // d[59]
+    .probe4(memory[299])   // e[59]
     );
-
 
 endmodule
