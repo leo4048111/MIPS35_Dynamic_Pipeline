@@ -197,10 +197,11 @@ CP0 cp0_inst(
 // HILO寄存器实例化
 wire wb_is_MULT;
 wire wb_is_MULTU;
-wire HL_W;
+wire [1:0] HL_W;
 wire [`i32] wb_hi_out;
 wire [`i32] wb_lo_out;
-assign HL_W = wb_is_MULTU | wb_is_MULT;
+
+assign HL_W = (wb_is_MULTU | wb_is_MULT) ? 2'b11 : 2'b00;
 
 RegHiLo reghilo_inst(
     .clk(clk),

@@ -36,8 +36,8 @@ reg [`i32] reg_lo;
 
 always @ (posedge clk) begin
     if(rst) begin
-        reg_hi <= 32'd999;
-        reg_lo <= 32'd888;
+        reg_hi <= 0;
+        reg_lo <= 0;
     end
     else begin
         if(HL_W[0]) reg_lo <= Lo_in;
