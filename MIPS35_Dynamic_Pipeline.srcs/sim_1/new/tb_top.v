@@ -26,7 +26,7 @@ reg clk = 0;
 reg rst = 1;
 
 initial begin
-    #11 rst = 0;
+    #10000 rst = 0;
 end
 
 always #10 clk = ~clk;

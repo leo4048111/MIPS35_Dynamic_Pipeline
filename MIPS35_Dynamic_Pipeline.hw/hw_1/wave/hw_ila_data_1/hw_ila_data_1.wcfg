@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3856345fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="cpu_instance/dmem_instance/memory[59]_0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">cpu_instance/dmem_instance/memory[59]_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[59]_0[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="cpu_instance/dmem_instance/memory[119]_4" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">cpu_instance/dmem_instance/memory[119]_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[119]_4[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="cpu_instance/dmem_instance/memory[179]_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">cpu_instance/dmem_instance/memory[179]_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[179]_2[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="cpu_instance/dmem_instance/memory[239]_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">cpu_instance/dmem_instance/memory[239]_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[239]_1[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="cpu_instance/dmem_instance/memory[299]_3" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">cpu_instance/dmem_instance/memory[299]_3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[299]_3[31:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>
