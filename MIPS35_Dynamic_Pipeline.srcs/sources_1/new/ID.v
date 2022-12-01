@@ -63,7 +63,10 @@ module ID(
     // 中断控制输出
     output is_exception,
     output [`i5] cause_out,
-    output is_eret
+    output is_eret,
+    // MULT MULTU
+    output is_MULT,
+    output is_MULTU
     );
 
 wire [`i6] op, funct;
@@ -165,7 +168,7 @@ assign rf_rena2 = rst ? 0 : (~(J|JAL|LUI|ADDI|ADDIU|ANDI|ORI|XORI|LW|SLTI|SLTIU|
 assign raddr1 = rst ? 0 : id_inst[`rs];
 assign raddr2 = rst ? 0 : id_inst[`rt];
 assign waddr = rst ? 0 : (JAL ? 31 : ((op && !MUL) ? id_inst[`rt] : id_inst[`rd]));
-assign rf_wena = rst ? 0 : (~(JR|SW|BEQ|BNE|J|BREAK|SYSCALL|TEQ|ERET));
+assign rf_wena = rst ? 0 : (~(JR|SW|BEQ|BNE|J|BREAK|SYSCALL|TEQ|ERET|MULTU|MULT));
 
 // ALU控制信号与运算数
 wire [`i5] shamt;
