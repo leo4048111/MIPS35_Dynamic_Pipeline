@@ -26,7 +26,8 @@ module CPU(
     input rst,
     input [`i32] IM_Inst,
     output [`i32] pc,
-    output IM_rena
+    output IM_rena,
+    output [`i32] debug_data // memory[i]
     );
 
 wire [`i4] flush; // 全局冲刷信号，该信号[3]~[0]位分别对应冲刷if_id,id_ex,ex_mem和mem_wb中流水寄存器的锁存数据
@@ -393,7 +394,9 @@ DMEM dmem_instance(
     .DM_WData(mem_dm_wdata),
     .DM_W(mem_dm_wena),
     .DM_R(mem_dm_rena),
-    .DM_RData(DM_RData)
+    .DM_RData(DM_RData),
+    .DM_DEBUG_READ_ADDR(299),
+    .DM_DEBUG_DATA(debug_data)
     );
 
 // MEM_WB模块实例化

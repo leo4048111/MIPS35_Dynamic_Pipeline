@@ -27,7 +27,9 @@ module DMEM(
     input [31:0] DM_WData,
     input DM_W,
     input DM_R,
-    output [31:0] DM_RData
+    output [31:0] DM_RData,
+    input [10:0] DM_DEBUG_READ_ADDR,
+    output [31:0] DM_DEBUG_DATA
     );
 
 reg [31:0] memory [0:1023];
@@ -59,6 +61,8 @@ always @(posedge clk) begin
 end
 
 assign DM_RData = (DM_R) ? memory[DM_Addr] : 32'bz;
+
+assign DM_DEBUG_DATA = memory[DM_DEBUG_READ_ADDR];
 
 ila_0 ila_inst(
     .clk(clk),
