@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1669723441">
-  <File Type="PA-TCL" Name="top.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1669855234">
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-RDS" Name="top.vds"/>
   <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
@@ -32,6 +32,20 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Multifier.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FlushCtrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/StallCtrl.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -74,13 +88,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/IF_ID.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/StallCtrl.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

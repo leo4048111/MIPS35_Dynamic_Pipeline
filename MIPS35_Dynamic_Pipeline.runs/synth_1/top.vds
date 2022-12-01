@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Nov 29 20:04:04 2022
-# Process ID: 16032
+# Start of session at: Thu Dec 01 08:40:37 2022
+# Process ID: 11440
 # Current directory: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8208 
+INFO: Helper process launched with PID 10872 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 357.957 ; gain = 150.516
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 357.727 ; gain = 150.289
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:29]
@@ -25,69 +25,84 @@ INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/V
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:31]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:41]
 INFO: [Synth 8-638] synthesizing module 'CPU' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
+INFO: [Synth 8-638] synthesizing module 'FlushCtrl' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/FlushCtrl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FlushCtrl' (1#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/FlushCtrl.v:23]
 INFO: [Synth 8-638] synthesizing module 'StallCtrl' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/StallCtrl.v:23]
-INFO: [Synth 8-256] done synthesizing module 'StallCtrl' (1#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/StallCtrl.v:23]
+INFO: [Synth 8-256] done synthesizing module 'StallCtrl' (2#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/StallCtrl.v:23]
 INFO: [Synth 8-638] synthesizing module 'PC' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/PC.v:24]
-INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/PC.v:24]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/PC.v:24]
 INFO: [Synth 8-638] synthesizing module 'IF_ID' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IF_ID.v:24]
-INFO: [Synth 8-256] done synthesizing module 'IF_ID' (3#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IF_ID.v:24]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (4#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IF_ID.v:24]
 INFO: [Synth 8-638] synthesizing module 'ID' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:25]
 INFO: [Synth 8-638] synthesizing module 'CauseGenerator' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CauseGenerator.v:23]
 INFO: [Synth 8-226] default block is never used [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CauseGenerator.v:32]
-INFO: [Synth 8-256] done synthesizing module 'CauseGenerator' (4#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CauseGenerator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CauseGenerator' (5#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CauseGenerator.v:23]
 WARNING: [Synth 8-3848] Net hl_w in module/entity ID does not have driver. [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:62]
-INFO: [Synth 8-256] done synthesizing module 'ID' (5#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:25]
+INFO: [Synth 8-256] done synthesizing module 'ID' (6#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:25]
 INFO: [Synth 8-638] synthesizing module 'CP0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CP0.v:23]
-INFO: [Synth 8-256] done synthesizing module 'CP0' (6#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CP0.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CP0' (7#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CP0.v:23]
 INFO: [Synth 8-638] synthesizing module 'RegHiLo' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/RegHiLo.v:23]
-INFO: [Synth 8-256] done synthesizing module 'RegHiLo' (7#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/RegHiLo.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegHiLo' (8#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/RegHiLo.v:23]
 INFO: [Synth 8-638] synthesizing module 'Regfile' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Regfile.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Regfile' (8#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Regfile' (9#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Regfile.v:23]
 INFO: [Synth 8-638] synthesizing module 'ID_EX' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID_EX.v:24]
-INFO: [Synth 8-256] done synthesizing module 'ID_EX' (9#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID_EX.v:24]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (10#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID_EX.v:24]
 INFO: [Synth 8-638] synthesizing module 'EX' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
 INFO: [Synth 8-638] synthesizing module 'Multifier' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Multifier' (10#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:23]
-INFO: [Synth 8-256] done synthesizing module 'EX' (11#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Multifier' (11#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EX' (12#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:24]
 INFO: [Synth 8-638] synthesizing module 'EX_MEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
-INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (12#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (13#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX_MEM.v:24]
 INFO: [Synth 8-638] synthesizing module 'MEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
-INFO: [Synth 8-256] done synthesizing module 'MEM' (13#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (14#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
 INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:63]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ila_0' (14#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'DMEM' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ila_inst' of module 'ila_0' requires 8 connections, but only 6 given [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:63]
+INFO: [Synth 8-256] done synthesizing module 'DMEM' (16#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 INFO: [Synth 8-638] synthesizing module 'MEM_WB' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
-INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (16#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
-INFO: [Synth 8-256] done synthesizing module 'CPU' (17#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (17#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (18#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
 INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (18#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'IMEM' (19#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (19#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IMEM' (20#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
 WARNING: [Synth 8-689] width (11) of port connection 'IM_Addr' does not match port width (8) of module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:46]
-INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (21#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[4]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[3]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[2]
 WARNING: [Synth 8-3331] design MEM_WB has unconnected port stall[1]
+WARNING: [Synth 8-3331] design MEM_WB has unconnected port flush[3]
+WARNING: [Synth 8-3331] design MEM_WB has unconnected port flush[2]
+WARNING: [Synth 8-3331] design MEM_WB has unconnected port flush[1]
 WARNING: [Synth 8-3331] design EX_MEM has unconnected port stall[4]
 WARNING: [Synth 8-3331] design EX_MEM has unconnected port stall[3]
 WARNING: [Synth 8-3331] design EX_MEM has unconnected port stall[2]
+WARNING: [Synth 8-3331] design EX_MEM has unconnected port flush[3]
+WARNING: [Synth 8-3331] design EX_MEM has unconnected port flush[2]
+WARNING: [Synth 8-3331] design EX_MEM has unconnected port flush[0]
 WARNING: [Synth 8-3331] design ID_EX has unconnected port stall[4]
 WARNING: [Synth 8-3331] design ID_EX has unconnected port stall[3]
 WARNING: [Synth 8-3331] design ID_EX has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ID_EX has unconnected port flush[3]
+WARNING: [Synth 8-3331] design ID_EX has unconnected port flush[1]
+WARNING: [Synth 8-3331] design ID_EX has unconnected port flush[0]
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[1]
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[0]
 WARNING: [Synth 8-3331] design IF_ID has unconnected port stall[4]
 WARNING: [Synth 8-3331] design IF_ID has unconnected port stall[1]
 WARNING: [Synth 8-3331] design IF_ID has unconnected port stall[0]
+WARNING: [Synth 8-3331] design IF_ID has unconnected port flush[2]
+WARNING: [Synth 8-3331] design IF_ID has unconnected port flush[1]
+WARNING: [Synth 8-3331] design IF_ID has unconnected port flush[0]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[3]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[2]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[1]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 403.930 ; gain = 196.488
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 481.273 ; gain = 273.836
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -97,7 +112,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 403.930 ; gain = 196.488
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 481.273 ; gain = 273.836
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'imem_instance/dmg_inst_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:32]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ila_0' instantiated as 'cpu_instance/dmem_instance/ila_inst' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:63]
@@ -106,10 +121,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-16032-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/dcp/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-11440-DESKTOP-55513A7/dcp_2/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
 Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
@@ -117,23 +132,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 711.391 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 815.770 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for cpu_instance/dmem_instance/ila_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
@@ -169,6 +184,13 @@ INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/Multifier.v:37]
 INFO: [Synth 8-5545] ROM "ZF" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "memory_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[6]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[8]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[9]" won't be mapped to RAM because it is too sparse
@@ -194,6 +216,43 @@ INFO: [Synth 8-5546] ROM "memory_reg[28]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "memory_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "memory_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[64]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[65]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[67]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "memory_reg[68]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_a_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:232]
 WARNING: [Synth 8-327] inferring latch for variable 'reg_alu_b_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:246]
 WARNING: [Synth 8-327] inferring latch for variable 'reg_read_data2_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/ID.v:198]
@@ -203,14 +262,21 @@ WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [D:/Projects/Vivado
 WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:61]
 WARNING: [Synth 8-327] inferring latch for variable 'SF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:88]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DMEM__GB0     |           1|     32768|
+|2     |DMEM__GB1     |           1|      6434|
+|3     |DMEM__GB2     |           1|     10554|
+|4     |DMEM__GB3     |           1|     14157|
+|5     |DMEM__GB4     |           1|     19153|
+|6     |CPU__GC0      |           1|     19417|
+|7     |top__GC0      |           1|       159|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -225,7 +291,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit         XORs := 1     
 	   2 Input      1 Bit         XORs := 3     
 +---Registers : 
-	               32 Bit    Registers := 79    
+	               32 Bit    Registers := 1071  
 	               11 Bit    Registers := 2     
 	                5 Bit    Registers := 4     
 	                1 Bit    Registers := 10    
@@ -264,13 +330,13 @@ Detailed RTL Component Info :
 	   2 Input     35 Bit        Muxes := 1     
 	   2 Input     34 Bit        Muxes := 1     
 	   2 Input     33 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 58    
+	   2 Input     32 Bit        Muxes := 54    
 	   3 Input     32 Bit        Muxes := 1     
 	  16 Input     32 Bit        Muxes := 1     
 	   6 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 4     
-	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 69    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1063  
 	  16 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -283,6 +349,17 @@ Module top
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
+Module DMEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 1019  
+Module FlushCtrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
 Module StallCtrl 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -411,13 +488,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 1     
-Module DMEM 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 32    
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 14    
-	   2 Input      1 Bit        Muxes := 25    
 Module MEM_WB 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -430,8 +500,6 @@ Module CPU
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
 Module IMEM 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -448,10 +516,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 712.004 ; gain = 504.563
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 822.840 ; gain = 615.402
+INFO: Vivado Synthesis caught shared memory exception 'The system cannot find the file specified.'. Continuing without using shared memory (or continuing without helper parallel flow)
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5545] ROM "ZF" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 DSP Report: Generating DSP mul_result, operation Mode is: A*B.
 DSP Report: operator mul_result is absorbed into DSP mul_result.
@@ -465,43 +537,25 @@ DSP Report: operator mul_result is absorbed into DSP mul_result.
 DSP Report: Generating DSP mul_result, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator mul_result is absorbed into DSP mul_result.
 DSP Report: operator mul_result is absorbed into DSP mul_result.
-INFO: [Synth 8-5546] ROM "memory_reg[7]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[8]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[9]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[10]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[11]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[12]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[13]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[14]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[15]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[16]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[17]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[18]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[19]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[20]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[21]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[22]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[23]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[24]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[25]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[26]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[27]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[28]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[29]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[30]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memory_reg[31]" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[1]
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Parallel Reinference  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 822.840 ; gain = 615.402
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DMEM__GB0     |           1|     32768|
+|2     |DMEM__GB1     |           1|      6434|
+|3     |DMEM__GB2     |           1|     10649|
+|4     |DMEM__GB3     |           1|     14537|
+|5     |DMEM__GB4     |           1|     19153|
+|6     |CPU__GC0      |           1|     21749|
+|7     |top__GC0      |           1|       134|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -523,6 +577,70 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (reghilo_inst/\reg_hi_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (reghilo_inst/\reg_lo_reg[0] )
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[1]' (FDSE) to 'reghilo_inst/reg_lo_reg[3]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[1]' (FDRE) to 'reghilo_inst/reg_lo_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[2]' (FDSE) to 'reghilo_inst/reg_lo_reg[3]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[2]' (FDRE) to 'reghilo_inst/reg_lo_reg[7]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[3]' (FDRE) to 'reghilo_inst/reg_lo_reg[7]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[3]' (FDSE) to 'reghilo_inst/reg_lo_reg[4]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[4]' (FDRE) to 'reghilo_inst/reg_lo_reg[7]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[4]' (FDSE) to 'reghilo_inst/reg_lo_reg[5]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[5]' (FDSE) to 'reghilo_inst/reg_lo_reg[5]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[5]' (FDSE) to 'reghilo_inst/reg_lo_reg[6]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[6]' (FDSE) to 'reghilo_inst/reg_lo_reg[6]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[6]' (FDSE) to 'reghilo_inst/reg_lo_reg[8]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[7]' (FDSE) to 'reghilo_inst/reg_lo_reg[8]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[7]' (FDRE) to 'reghilo_inst/reg_lo_reg[10]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[8]' (FDSE) to 'reghilo_inst/reg_lo_reg[8]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[8]' (FDSE) to 'reghilo_inst/reg_lo_reg[9]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[9]' (FDSE) to 'reghilo_inst/reg_lo_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (reghilo_inst/\reg_lo_reg[9] )
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[10]' (FDRE) to 'reghilo_inst/reg_lo_reg[10]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[10]' (FDRE) to 'reghilo_inst/reg_lo_reg[11]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[11]' (FDRE) to 'reghilo_inst/reg_lo_reg[11]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[11]' (FDRE) to 'reghilo_inst/reg_lo_reg[12]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[12]' (FDRE) to 'reghilo_inst/reg_lo_reg[12]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[12]' (FDRE) to 'reghilo_inst/reg_lo_reg[13]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[13]' (FDRE) to 'reghilo_inst/reg_lo_reg[13]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[13]' (FDRE) to 'reghilo_inst/reg_lo_reg[14]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[14]' (FDRE) to 'reghilo_inst/reg_lo_reg[14]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[14]' (FDRE) to 'reghilo_inst/reg_lo_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[15]' (FDRE) to 'reghilo_inst/reg_lo_reg[15]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[15]' (FDRE) to 'reghilo_inst/reg_lo_reg[16]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[16]' (FDRE) to 'reghilo_inst/reg_lo_reg[16]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[16]' (FDRE) to 'reghilo_inst/reg_lo_reg[17]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[17]' (FDRE) to 'reghilo_inst/reg_lo_reg[17]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[17]' (FDRE) to 'reghilo_inst/reg_lo_reg[18]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[18]' (FDRE) to 'reghilo_inst/reg_lo_reg[18]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[18]' (FDRE) to 'reghilo_inst/reg_lo_reg[19]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[19]' (FDRE) to 'reghilo_inst/reg_lo_reg[19]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[19]' (FDRE) to 'reghilo_inst/reg_lo_reg[20]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[20]' (FDRE) to 'reghilo_inst/reg_lo_reg[20]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[20]' (FDRE) to 'reghilo_inst/reg_lo_reg[21]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[21]' (FDRE) to 'reghilo_inst/reg_lo_reg[21]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[21]' (FDRE) to 'reghilo_inst/reg_lo_reg[22]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[22]' (FDRE) to 'reghilo_inst/reg_lo_reg[22]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[22]' (FDRE) to 'reghilo_inst/reg_lo_reg[23]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[23]' (FDRE) to 'reghilo_inst/reg_lo_reg[23]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[23]' (FDRE) to 'reghilo_inst/reg_lo_reg[24]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[24]' (FDRE) to 'reghilo_inst/reg_lo_reg[24]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[24]' (FDRE) to 'reghilo_inst/reg_lo_reg[25]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[25]' (FDRE) to 'reghilo_inst/reg_lo_reg[25]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[25]' (FDRE) to 'reghilo_inst/reg_lo_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[26]' (FDRE) to 'reghilo_inst/reg_lo_reg[26]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[26]' (FDRE) to 'reghilo_inst/reg_lo_reg[27]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[27]' (FDRE) to 'reghilo_inst/reg_lo_reg[27]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[27]' (FDRE) to 'reghilo_inst/reg_lo_reg[28]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[28]' (FDRE) to 'reghilo_inst/reg_lo_reg[28]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[28]' (FDRE) to 'reghilo_inst/reg_lo_reg[29]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[29]' (FDRE) to 'reghilo_inst/reg_lo_reg[29]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[29]' (FDRE) to 'reghilo_inst/reg_lo_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[30]' (FDRE) to 'reghilo_inst/reg_lo_reg[30]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_lo_reg[30]' (FDRE) to 'reghilo_inst/reg_lo_reg[31]'
+INFO: [Synth 8-3886] merging instance 'reghilo_inst/reg_hi_reg[31]' (FDRE) to 'reghilo_inst/reg_lo_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (reghilo_inst/\reg_lo_reg[31] )
 WARNING: [Synth 8-3332] Sequential element (reg_status_reg[31]) is unused and will be removed from module CP0.
 WARNING: [Synth 8-3332] Sequential element (reg_status_reg[27]) is unused and will be removed from module CP0.
 WARNING: [Synth 8-3332] Sequential element (reg_status_reg[26]) is unused and will be removed from module CP0.
@@ -568,19 +686,80 @@ WARNING: [Synth 8-3332] Sequential element (reg_cause_reg[3]) is unused and will
 WARNING: [Synth 8-3332] Sequential element (reg_cause_reg[2]) is unused and will be removed from module CP0.
 WARNING: [Synth 8-3332] Sequential element (reg_cause_reg[1]) is unused and will be removed from module CP0.
 WARNING: [Synth 8-3332] Sequential element (reg_cause_reg[0]) is unused and will be removed from module CP0.
-WARNING: [Synth 8-3332] Sequential element (CF_reg) is unused and will be removed from module EX.
-WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module EX.
-WARNING: [Synth 8-3332] Sequential element (SF_reg) is unused and will be removed from module EX.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[2]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[1]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[0]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[0]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[3]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[1]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[2]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[7]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[3]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[4]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[4]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[5]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[5]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[6]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[6]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[8]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[7]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[10]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[8]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[9]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[9]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[10]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[11]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[11]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[12]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[12]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[13]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[13]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[14]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[14]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[15]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[15]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[16]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[16]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[17]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[17]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[18]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[18]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[19]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[19]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[20]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[20]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[21]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[21]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[22]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[22]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[23]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[23]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[24]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[24]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[25]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[25]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[26]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_hi_reg[26]) is unused and will be removed from module RegHiLo.
+WARNING: [Synth 8-3332] Sequential element (reg_lo_reg[27]) is unused and will be removed from module RegHiLo.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 822.840 ; gain = 615.402
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 712.004 ; gain = 504.563
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 822.840 ; gain = 615.402
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DMEM__GB0     |           1|     32768|
+|2     |DMEM__GB1     |           1|      6434|
+|3     |DMEM__GB2     |           1|      8670|
+|4     |DMEM__GB3     |           1|      9629|
+|5     |DMEM__GB4     |           1|     10067|
+|6     |CPU__GC0      |           1|      7622|
+|7     |top__GC0      |           1|        96|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -588,84 +767,40 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 767.914 ; gain = 560.473
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 872.410 ; gain = 664.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 767.914 ; gain = 560.473
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 874.281 ; gain = 666.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DMEM__GB0     |           1|     32768|
+|2     |DMEM__GB1     |           1|      6434|
+|3     |DMEM__GB2     |           1|      8670|
+|4     |DMEM__GB3     |           1|      9629|
+|5     |DMEM__GB4     |           1|     10067|
+|6     |CPU__GC0      |           1|      7622|
+|7     |top__GC0      |           1|        96|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_lo_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (cpu_instance/reghilo_inst/reg_hi_reg[12]) is unused and will be removed from module top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 912.617 ; gain = 705.180
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 825.113 ; gain = 617.672
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DMEM__GB0     |           1|     15296|
+|2     |DMEM__GB4     |           1|      9617|
++------+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:44 ; elapsed = 00:01:07 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -681,8 +816,72 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe5[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \cpu_instance/dmem_instance/ila_inst  has unconnected pin probe6[0]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -695,7 +894,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,25 +906,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:12 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:12 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:12 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:12 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -748,16 +947,16 @@ Report Cell Usage:
 |3     |BUFG           |     6|
 |4     |CARRY4         |    84|
 |5     |DSP48E1_1      |     3|
-|6     |LUT1           |   106|
-|7     |LUT2           |   358|
-|8     |LUT3           |   364|
-|9     |LUT4           |   177|
-|10    |LUT5           |   206|
-|11    |LUT6           |  1477|
-|12    |MUXF7          |   416|
-|13    |MUXF8          |   128|
-|14    |FDRE           |  2433|
-|15    |FDSE           |    38|
+|6     |LUT1           |   108|
+|7     |LUT2           |   401|
+|8     |LUT3           |   111|
+|9     |LUT4           |   195|
+|10    |LUT5           |   418|
+|11    |LUT6           | 10833|
+|12    |MUXF7          |  4640|
+|13    |MUXF8          |  2304|
+|14    |FDRE           | 34736|
+|15    |FDSE           |    28|
 |16    |LD             |    32|
 |17    |LDC            |   128|
 |18    |IBUF           |     2|
@@ -767,29 +966,30 @@ Report Instance Areas:
 +------+--------------------+--------+------+
 |      |Instance            |Module  |Cells |
 +------+--------------------+--------+------+
-|1     |top                 |        |  5990|
-|2     |  cpu_instance      |CPU     |  5907|
-|3     |    cp0_inst        |CP0     |    69|
-|4     |    dmem_instance   |DMEM    |  1472|
-|5     |    ex_instance     |EX      |    92|
-|6     |    ex_mem_instance |EX_MEM  |   453|
-|7     |    id_ex_instance  |ID_EX   |   997|
-|8     |    id_instance     |ID      |   158|
-|9     |    if_id_instance  |IF_ID   |   565|
+|1     |top                 |        | 54061|
+|2     |  cpu_instance      |CPU     | 53977|
+|3     |    id_instance     |ID      |   181|
+|4     |    cp0_inst        |CP0     |    70|
+|5     |    dmem_instance   |DMEM    | 48064|
+|6     |    ex_instance     |EX      |    94|
+|7     |    ex_mem_instance |EX_MEM  |  1888|
+|8     |    id_ex_instance  |ID_EX   |   951|
+|9     |    if_id_instance  |IF_ID   |   564|
 |10    |    mem_wb_instance |MEM_WB  |    69|
 |11    |    pc_instance     |PC      |   112|
-|12    |    rf_instance     |Regfile |  1920|
+|12    |    rf_instance     |Regfile |  1984|
 |13    |  imem_instance     |IMEM    |    64|
 +------+--------------------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:12 . Memory (MB): peak = 912.617 ; gain = 705.180
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 122 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 825.113 ; gain = 217.223
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 825.113 ; gain = 617.672
+Synthesis finished with 0 errors, 64 critical warnings and 110 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:01 . Memory (MB): peak = 912.617 ; gain = 271.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:13 . Memory (MB): peak = 912.617 ; gain = 705.180
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 249 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'DMEM' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -798,8 +998,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 128 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-142 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+231 Infos, 148 Warnings, 64 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 825.113 ; gain = 525.297
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 825.113 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 20:04:40 2022...
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 912.617 ; gain = 612.867
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 912.617 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 01 08:41:59 2022...
