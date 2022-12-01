@@ -28,13 +28,17 @@ module EX(
     input [`i32] alu_b,
     input i_rf_wena, // 写入使能信号输入
     input [`i5] i_waddr, // 写入地址输入
+    input ex_is_MULT,
+    input ex_is_MULTU,
     output [`i32] wdata, // 运算结果
     output rf_wena, // 写入使能信号输出
     output [`i5] waddr, // 写入地址输出
     output reg CF,
     output reg OF,
     output reg SF,
-    output reg ZF
+    output reg ZF,
+    output [`i32] ex_hi_out,
+    output [`i32] ex_lo_out
     );
 
 assign rf_wena = i_rf_wena;
@@ -124,12 +128,15 @@ wire [`i32] high_out;
 wire [`i32] low_out;
 
 Multifier multifier_inst(
-    .IS_UNSIGNED(1),
+    .IS_UNSIGNED(ex_is_MULTU),
     .a(alu_a),
     .b(alu_b),
     .high(high_out),
     .low(low_out)
 );
+
+assign ex_hi_out = high_out;
+assign ex_lo_out = low_out;
 
 wire [`i32] alu_out;
 assign alu_out = IS_MUL ? mul_result[31:0] : ALU_Result[31:0];

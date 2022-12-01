@@ -123,6 +123,13 @@ assign MFLO = (op == `R_type && funct == `MFLO);
 wire MUL;
 assign MUL = (op == `MUL_OP && funct == `MUL_FUNCT);
 
+wire MULT, MULTU;
+assign MULT = (op == `SPECIAL && funct == `MULT);
+assign MULTU = (op == `SPECIAL && funct == `MULTU);
+
+assign is_MULT = MULT;
+assign is_MULTU = MULTU;
+
 // 中断指令
 wire BREAK, SYSCALL, TEQ;
 assign BREAK = (op == `Intr_type && funct == `BREAK);

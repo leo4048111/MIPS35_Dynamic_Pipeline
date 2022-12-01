@@ -77,6 +77,11 @@
 `define MUL_OP 6'b011_100
 `define MUL_FUNCT 6'b000_010
 
+//multu mult
+`define SPECIAL 6'b000000 // opcode
+`define MULT 6'b011_000 // funct
+`define MULTU 6'b011_001 // funct
+
 //intrs
 `define Intr_type 6'b000000 // opcode
 `define BREAK 6'b001_101 // Intr_type funct

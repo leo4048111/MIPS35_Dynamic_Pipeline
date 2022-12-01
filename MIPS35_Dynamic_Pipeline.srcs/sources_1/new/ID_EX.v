@@ -40,6 +40,8 @@ module ID_EX(
     input id_is_BNE,
     input id_is_BEQ,
     input [`i32] id_jump_addr,
+    input id_is_MULTU,
+    input id_is_MULT,
 
     // 传递到EX的信息
     output reg [`i5] ex_waddr, // 寄存器堆写地址
@@ -53,7 +55,9 @@ module ID_EX(
     output reg [10:0] ex_dm_addr,
     output reg ex_is_BNE,
     output reg ex_is_BEQ,
-    output reg [`i32] ex_jump_addr
+    output reg [`i32] ex_jump_addr,
+    output reg ex_is_MULTU,
+    output reg ex_is_MULT
     );
 
 always @ (posedge clk) begin
@@ -70,6 +74,8 @@ always @ (posedge clk) begin
         ex_is_BNE <= 0;
         ex_is_BEQ <= 0;
         ex_jump_addr <= 0;
+        ex_is_MULTU <= 0;
+        ex_is_MULT <= 0;
     end
     else if(stall[2] && !stall[1]) begin
         ex_waddr <= 0;
@@ -84,6 +90,8 @@ always @ (posedge clk) begin
         ex_is_BNE <= 0;
         ex_is_BEQ <= 0;
         ex_jump_addr <= 0;
+        ex_is_MULTU <= 0;
+        ex_is_MULT <= 0;
     end
     else if(stall[2]) begin
         ex_waddr <= ex_waddr;
@@ -98,6 +106,8 @@ always @ (posedge clk) begin
         ex_is_BNE <= ex_is_BNE;
         ex_is_BEQ <= ex_is_BEQ;
         ex_jump_addr <= ex_jump_addr;
+        ex_is_MULTU <= ex_is_MULTU;
+        ex_is_MULT <= ex_is_MULT;
     end
     else begin
         ex_waddr <= id_waddr;
@@ -112,6 +122,8 @@ always @ (posedge clk) begin
         ex_is_BNE <= id_is_BNE;
         ex_is_BEQ <= id_is_BEQ;
         ex_jump_addr <= id_jump_addr;
+        ex_is_MULTU <= id_is_MULTU;
+        ex_is_MULT <= id_is_MULT;
     end
 end
 

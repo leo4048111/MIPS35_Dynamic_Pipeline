@@ -122,6 +122,9 @@ wire id_is_exception;
 wire [`i5] id_cause_out;
 wire id_is_eret;
 
+wire id_is_MULT;
+wire id_is_MULTU;
+
 //assign npc = pc + 4;
 assign jump_reqStall = is_Jump | id_is_exception | id_is_eret;
 
@@ -162,7 +165,9 @@ ID id_instance(
     .hl_w(id_hl_w),
     .is_exception(id_is_exception),
     .cause_out(id_cause_out),
-    .is_eret(id_is_eret)
+    .is_eret(id_is_eret),
+    .is_MULT(id_is_MULT),
+    .is_MULTU(id_is_MULTU)
     );
 
 assign id_reqStall = 0;
@@ -190,12 +195,19 @@ CP0 cp0_inst(
     );
 
 // HILO寄存器实例化
+wire wb_is_MULT;
+wire wb_is_MULTU;
+wire HL_W;
+wire [`i32] wb_hi_out;
+wire [`i32] wb_lo_out;
+assign HL_W = wb_is_MULTU | wb_is_MULT;
+
 RegHiLo reghilo_inst(
     .clk(clk),
     .rst(rst),
-    .Hi_in(1),
-    .Lo_in(1),
-    .HL_W(0),
+    .Hi_in(wb_hi_out),
+    .Lo_in(wb_lo_out),
+    .HL_W(HL_W),
     .HL_Rena(id_hl_rena),
     .HL_R(id_hl_r),
     .HL_out(hl_rdata)
@@ -234,6 +246,9 @@ wire ex_is_BNE;
 wire ex_is_BEQ;
 wire [`i32] ex_jump_addr;
 
+wire ex_is_MULT;
+wire ex_is_MULTU;
+
 ID_EX id_ex_instance(
     .clk(clk),
     .rst(rst),
@@ -251,6 +266,8 @@ ID_EX id_ex_instance(
     .id_is_BNE(is_BNE),
     .id_is_BEQ(is_BEQ),
     .id_jump_addr(id_jump_addr),
+    .id_is_MULTU(id_is_MULTU),
+    .id_is_MULT(id_is_MULT),
     .ex_waddr(ex_waddr),
     .ex_rf_wena(ex_rf_wena),
     .ex_aluc(ex_aluc),
@@ -262,7 +279,9 @@ ID_EX id_ex_instance(
     .ex_dm_addr(ex_dm_addr),
     .ex_is_BNE(ex_is_BNE),
     .ex_is_BEQ(ex_is_BEQ),
-    .ex_jump_addr(ex_jump_addr)
+    .ex_jump_addr(ex_jump_addr),
+    .ex_is_MULTU(ex_is_MULTU),
+    .ex_is_MULT(ex_is_MULT)
     );
 
 // EX模块实例化
@@ -270,6 +289,8 @@ wire CF;
 wire OF;
 wire SF;
 wire ZF;
+wire [`i32] ex_hi_out;
+wire [`i32] ex_lo_out;
 EX ex_instance(
     .rst(rst),
     .aluc(ex_aluc),
@@ -277,13 +298,17 @@ EX ex_instance(
     .alu_b(ex_alu_b),
     .i_rf_wena(ex_rf_wena),
     .i_waddr(ex_waddr),
+    .ex_is_MULT(ex_is_MULT),
+    .ex_is_MULTU(ex_is_MULTU),
     .wdata(ex_out_wdata),
     .rf_wena(ex_out_rf_wena),
     .waddr(ex_out_waddr),
     .CF(CF),
     .OF(OF),
     .SF(SF),
-    .ZF(ZF)
+    .ZF(ZF),
+    .ex_hi_out(ex_hi_out),
+    .ex_lo_out(ex_lo_out)
     );
 
 assign flush_when_branch_prediction_fails = (ex_is_BEQ && ZF) || (ex_is_BNE && !ZF); // 此处使用分支失败预测，
@@ -311,6 +336,10 @@ wire mem_dm_wena;
 wire mem_dm_rena;
 wire [`i32] mem_dm_wdata;
 wire [10:0] mem_dm_addr;
+wire mem_is_MULT;
+wire mem_is_MULTU;
+wire [`i32] mem_hi_out;
+wire [`i32] mem_lo_out;
 
 EX_MEM ex_mem_instance(
     .clk(clk),
@@ -324,13 +353,21 @@ EX_MEM ex_mem_instance(
     .ex_dm_rena(ex_dm_rena),
     .ex_dm_wdata(ex_dm_wdata),
     .ex_dm_addr(ex_dm_addr),
+    .ex_is_MULT(ex_is_MULT),
+    .ex_is_MULTU(ex_is_MULTU),
+    .ex_hi_out(ex_hi_out),
+    .ex_lo_out(ex_lo_out),
     .mem_wdata(mem_wdata),
     .mem_rf_wena(mem_rf_wena),
     .mem_waddr(mem_waddr),
     .mem_dm_wena(mem_dm_wena),
     .mem_dm_rena(mem_dm_rena),
     .mem_dm_wdata(mem_dm_wdata),
-    .mem_dm_addr(mem_dm_addr)
+    .mem_dm_addr(mem_dm_addr),
+    .mem_is_MULT(mem_is_MULT),
+    .mem_is_MULTU(mem_is_MULTU),
+    .mem_hi_out(mem_hi_out),
+    .mem_lo_out(mem_lo_out)
     );
 
 // MEM模块实例化
@@ -367,9 +404,17 @@ MEM_WB mem_wb_instance(
     .mem_wdata(mem_out_wdata),
     .mem_rf_wena(mem_out_rf_wena),
     .mem_waddr(mem_out_waddr),
+    .mem_is_MULT(mem_is_MULT),
+    .mem_is_MULTU(mem_is_MULTU),
+    .mem_hi_out(mem_hi_out),
+    .mem_lo_out(mem_lo_out),
     .wb_wdata(wb_wdata),
     .wb_rf_wena(wb_rf_wena),
-    .wb_waddr(wb_waddr)
+    .wb_waddr(wb_waddr),
+    .wb_is_MULT(wb_is_MULT),
+    .wb_is_MULTU(wb_is_MULTU),
+    .wb_hi_out(wb_hi_out),
+    .wb_lo_out(wb_lo_out)
     );
 
 assign ex_reqStall = (rf_rena1 && ex_dm_rena && (ex_out_waddr == raddr1)) || (rf_rena2 && ex_dm_rena && (ex_out_waddr == raddr2));
