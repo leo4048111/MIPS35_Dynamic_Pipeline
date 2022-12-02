@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Dec 01 16:48:09 2022
-# Process ID: 20840
+# Start of session at: Thu Dec 01 21:38:53 2022
+# Process ID: 21396
 # Current directory: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/top.vds
@@ -15,7 +15,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 20336 
+INFO: Helper process launched with PID 22520 
 WARNING: [Synth 8-2306] macro MULT redefined [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v:82]
 WARNING: [Synth 8-2306] macro MULTU redefined [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v:83]
 WARNING: [Synth 8-2306] macro MULT redefined [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v:21]
@@ -23,7 +23,7 @@ WARNING: [Synth 8-2306] macro MULTU redefined [D:/Projects/Vivado/MIPS35_Dynamic
 WARNING: [Synth 8-2306] macro MULT redefined [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v:82]
 WARNING: [Synth 8-2306] macro MULTU redefined [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/opcodes.v:83]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 316.344 ; gain = 108.910
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 317.367 ; gain = 109.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:24]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:31]
@@ -64,15 +64,15 @@ INFO: [Synth 8-638] synthesizing module 'MEM' [D:/Projects/Vivado/MIPS35_Dynamic
 INFO: [Synth 8-256] done synthesizing module 'MEM' (14#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM.v:24]
 INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:67]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'ila_0' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (15#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/realtime/ila_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'DMEM' (16#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:23]
 INFO: [Synth 8-638] synthesizing module 'MEM_WB' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
 INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (17#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/MEM_WB.v:24]
 INFO: [Synth 8-256] done synthesizing module 'CPU' (18#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/CPU.v:24]
 INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (19#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (19#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/realtime/dist_mem_gen_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'IMEM' (20#1) [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:24]
 WARNING: [Synth 8-689] width (11) of port connection 'IM_Addr' does not match port width (8) of module 'IMEM' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/top.v:62]
 INFO: [Synth 8-638] synthesizing module 'LEDDriver' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/LEDDriver.v:1]
@@ -113,7 +113,7 @@ WARNING: [Synth 8-3331] design PC has unconnected port stall[2]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[1]
 WARNING: [Synth 8-3331] design PC has unconnected port stall[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 439.262 ; gain = 231.828
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 439.328 ; gain = 231.875
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -123,7 +123,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 439.262 ; gain = 231.828
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 439.328 ; gain = 231.875
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'imem_instance/dmg_inst_0' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/IMEM.v:32]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ila_0' instantiated as 'cpu_instance/dmem_instance/ila_inst' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/DMEM.v:67]
@@ -132,10 +132,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/dcp/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/dcp/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
-Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/dcp_2/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
-Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-20840-DESKTOP-55513A7/dcp_2/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/dcp/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/dcp/dist_mem_gen_0_in_context.xdc] for cell 'imem_instance/dmg_inst_0'
+Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/dcp_2/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
+Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.runs/synth_1/.Xil/Vivado-21396-DESKTOP-55513A7/dcp_2/ila_0_in_context.xdc] for cell 'cpu_instance/dmem_instance/ila_inst'
 Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/constrs_1/new/tb.xdc]
 Finished Parsing XDC File [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/constrs_1/new/tb.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/constrs_1/new/tb.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -145,22 +145,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 784.195 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 784.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
@@ -274,7 +274,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [D:/Projects/Vivado
 WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:65]
 WARNING: [Synth 8-327] inferring latch for variable 'SF_reg' [D:/Projects/Vivado/MIPS35_Dynamic_Pipeline/MIPS35_Dynamic_Pipeline.srcs/sources_1/new/EX.v:92]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -543,7 +543,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 784.195 ; gain = 576.762
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 784.949 ; gain = 577.496
 INFO: Vivado Synthesis caught shared memory exception 'The system cannot find the file specified.'. Continuing without using shared memory (or continuing without helper parallel flow)
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
@@ -567,9 +567,9 @@ WARNING: [Synth 8-3331] design EX has unconnected port ex_is_MULT
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[1]
 WARNING: [Synth 8-3331] design ID has unconnected port hl_w[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:51 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Parallel Reinference  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 784.949 ; gain = 577.496
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -653,9 +653,9 @@ WARNING: [Synth 8-3332] Sequential element (CF_reg) is unused and will be remove
 WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module EX.
 WARNING: [Synth 8-3332] Sequential element (SF_reg) is unused and will be removed from module EX.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 784.949 ; gain = 577.496
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 784.195 ; gain = 576.762
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 784.949 ; gain = 577.496
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -676,10 +676,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 901.242 ; gain = 693.809
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 902.180 ; gain = 694.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 914.594 ; gain = 707.160
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 915.199 ; gain = 707.746
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -729,9 +729,9 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_insta
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_instancei_4/\cpu_instance/rf_instance/registers_reg[0][30] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu_instancei_4/\cpu_instance/rf_instance/registers_reg[0][31] )
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:38 . Memory (MB): peak = 915.336 ; gain = 707.902
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 918.426 ; gain = 710.973
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:38 . Memory (MB): peak = 915.336 ; gain = 707.902
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 918.426 ; gain = 710.973
 
 Report RTL Partitions: 
 +------+--------------+------------+----------+
@@ -742,7 +742,7 @@ Report RTL Partitions:
 |3     |DMEM__GB4     |           1|     13705|
 |4     |CPU__GC0      |           1|      6005|
 +------+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:38 . Memory (MB): peak = 915.336 ; gain = 707.902
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 918.426 ; gain = 710.973
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -759,7 +759,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:24 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -772,7 +772,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:24 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -784,25 +784,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:48 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:27 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:49 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:27 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:49 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:27 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:49 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:27 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -863,14 +863,14 @@ Report Instance Areas:
 |16    |  lo4_led_driver_instance |LEDDriver |    72|
 +------+--------------------------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:49 . Memory (MB): peak = 921.145 ; gain = 713.711
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:27 . Memory (MB): peak = 924.781 ; gain = 717.328
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:38 . Memory (MB): peak = 921.145 ; gain = 340.566
-Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:50 . Memory (MB): peak = 921.145 ; gain = 713.711
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 924.781 ; gain = 342.660
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:28 . Memory (MB): peak = 924.781 ; gain = 717.328
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 471 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'DMEM' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -882,6 +882,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 202 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:52 . Memory (MB): peak = 921.145 ; gain = 689.973
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 921.145 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 01 16:50:11 2022...
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:29 . Memory (MB): peak = 924.781 ; gain = 693.535
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 924.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 01 21:40:31 2022...

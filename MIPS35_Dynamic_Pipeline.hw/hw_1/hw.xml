@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="1">
-  <device name="xc7a100t_0" gui_info=""/>
+  <device name="xc7a100t_0" gui_info="dashboard1=hw_ila_1[xc7a100t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a100t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a100t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7a100t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a100t_0/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7a100t_0" gui_info="">
       <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/debug_nets.ltx"/>
@@ -21,6 +21,54 @@
     <Object name="XADC" gui_info="dashboard_1=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
   </ObjectList>
   <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[31]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[30]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[29]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[28]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[27]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[26]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[25]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[24]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[23]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[22]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[21]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[20]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[19]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[18]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[17]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[16]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[15]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[14]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[13]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[12]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[11]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[10]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[9]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[8]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[7]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[6]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[5]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[4]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[3]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[2]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[1]"/>
+        <net name="cpu_instance/dmem_instance/memory[119]_3[0]"/>
+      </nets>
+    </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
@@ -69,7 +117,7 @@
         <net name="cpu_instance/dmem_instance/memory[119]_4[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -117,7 +165,7 @@
         <net name="cpu_instance/dmem_instance/memory[179]_2[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -163,6 +211,54 @@
         <net name="cpu_instance/dmem_instance/memory[239]_1[2]"/>
         <net name="cpu_instance/dmem_instance/memory[239]_1[1]"/>
         <net name="cpu_instance/dmem_instance/memory[239]_1[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[31]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[30]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[29]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[28]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[27]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[26]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[25]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[24]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[23]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[22]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[21]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[20]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[19]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[18]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[17]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[16]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[15]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[14]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[13]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[12]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[11]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[10]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[9]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[8]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[7]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[6]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[5]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[4]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[3]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[2]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[1]"/>
+        <net name="cpu_instance/dmem_instance/memory[299]_0[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -259,6 +355,54 @@
         <net name="cpu_instance/dmem_instance/memory[59]_0[2]"/>
         <net name="cpu_instance/dmem_instance/memory[59]_0[1]"/>
         <net name="cpu_instance/dmem_instance/memory[59]_0[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+      </probeOptions>
+      <nets>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[31]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[30]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[29]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[28]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[27]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[26]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[25]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[24]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[23]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[22]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[21]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[20]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[19]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[18]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[17]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[16]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[15]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[14]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[13]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[12]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[11]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[10]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[9]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[8]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[7]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[6]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[5]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[4]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[3]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[2]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[1]"/>
+        <net name="cpu_instance/dmem_instance/memory[59]_4[0]"/>
       </nets>
     </probe>
   </probeset>
